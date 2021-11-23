@@ -11,6 +11,9 @@
     "lang.localOnly": {
         "message": "Only local changes (will only change local Thunderbird index database)"
     },
+    "lang.defaultSubjectPrefix" : {
+        "message" : "Default subject for prefix"
+    },
     "lang.menuTitle": {
         "message": "&Edit Mail Subject"
     },

@@ -11,6 +11,9 @@
     "lang.localOnly": {
         "message": "Änderungen nur lokal speichern (Lokale Datenbank)"
     },
+    "lang.defaultSubjectPrefix" : {
+        "message" : "Standardbetreff für Präfix"
+    },
     "lang.menuTitle": {
         "message": "&Email Betreff bearbeiten"
     },
