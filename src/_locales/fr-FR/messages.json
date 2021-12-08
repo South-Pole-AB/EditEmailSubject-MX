@@ -11,11 +11,11 @@
     "lang.localOnly": {
         "message": "Changements locaux uniquement (base de donnée locale de Thunderbird)"
     },
-    "lang.defaultSubjectPrefix" : {
-        "message" : "Sujet par défaut pour le préfixe"
-    },
     "lang.menuTitle": {
         "message": "&Editer le sujet du message"
+    },
+    "lang.newSubjectPrefix" : {
+        "message" : "Sujet par défaut pour le préfixe"
     },
     "lang.subject": {
         "message": "Sujet:"

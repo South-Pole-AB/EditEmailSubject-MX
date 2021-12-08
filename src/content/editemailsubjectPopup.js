@@ -1,9 +1,9 @@
 async function okAndInput(e) {
     let message = await messenger.runtime.sendMessage({action: "requestData"});
 	if ((e.type == "keydown" && e.key == "Enter") || e.type == "click") {
-		await messenger.runtime.sendMessage({action: "requestUpdate", newSubject: document.getElementById("editemailsubjectInput").value});
-		const windowId = (await messenger.windows.getCurrent()).id;
-		await messenger.windows.remove(windowId);
+	    await messenger.runtime.sendMessage({action: "requestUpdate", newSubject: document.getElementById("editemailsubjectInput").value});
+            const windowId = (await messenger.windows.getCurrent()).id;
+            await messenger.windows.remove(windowId);
 	}
 	
 	if (e.type == "keydown" && e.key == "Escape") {
@@ -30,7 +30,7 @@ async function load() {
 
 	let msg = await messenger.runtime.sendMessage({action: "requestData"});
 
-        var newSubjectPrefix = await getPrefValue("defaultSubjectPrefix");
+        var newSubjectPrefix = await getPrefValue("newSubjectPrefix");
         let date = new Date().toLocaleDateString();
         let time = new Date().toLocaleTimeString();
         if( newSubjectPrefix ) {
@@ -40,7 +40,7 @@ async function load() {
                 .replace('${time}', time);
         }
         
-        document.getElementById("editemailsubjectInput").value = newSubjectPrefix + msg.subject;
+        document.getElementById("editemailsubjectInput").value = newSubjectPrefix + " " + msg.subject;
 
 	if (msg.alreadyModified && msg.headers && msg.headers.hasOwnProperty("x-editemailsubject-originalsubject")) {
 		document.getElementById("editemailsubjectOld").value = msg.headers["x-editemailsubject-originalsubject"];

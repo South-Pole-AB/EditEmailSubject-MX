@@ -11,11 +11,14 @@
     "lang.localOnly": {
         "message": "Änderungen nur lokal speichern (Lokale Datenbank)"
     },
-    "lang.defaultSubjectPrefix" : {
-        "message" : "Standardbetreff für Präfix"
-    },
     "lang.menuTitle": {
         "message": "&Email Betreff bearbeiten"
+    },
+    "lang.newSubjectPrefix" : {
+        "message" : "Standardpräfix für Betreff"
+    },
+    "lang.newSubjectPrefixGuide" : {
+        "message" : "Geben Sie hier das Betreff-Präfix ein. Es wird dem ursprünglichen Betreff vorangestellt. Das Betreff-Präfix kann ${date} und ${time} enthalten, die durch das aktuelle Datum und die aktuelle Uhrzeit ersetzt werden."
     },
     "lang.subject": {
         "message": "Betreff:"

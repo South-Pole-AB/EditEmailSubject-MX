@@ -11,11 +11,14 @@
     "lang.localOnly": {
         "message": "Only local changes (will only change local Thunderbird index database)"
     },
-    "lang.defaultSubjectPrefix" : {
-        "message" : "Default subject for prefix"
-    },
     "lang.menuTitle": {
         "message": "&Edit Mail Subject"
+    },
+    "lang.newSubjectPrefix" : {
+        "message" : "Subject prefix"
+    },
+    "lang.newSubjectPrefixGuide" : {
+        "message" : "Enter the subject prefix here. It will prepended to the original subject. The subject prefix can contain ${date} and ${time} which will be replaced with the current date and time"
     },
     "lang.subject": {
         "message": "Subject:"

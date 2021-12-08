@@ -4,7 +4,7 @@ async function main() {
   let defaultPrefs = {
     "version": "2.1.1",
     "localOnly": true,
-    "newSubjectPrefix": ""
+    "defualtSubjectPrefix": ""
   };
   await editEmailSubjectPreferences.setDefaults(defaultPrefs);
   await editEmailSubjectPreferences.migrateFromLegacy(defaultPrefs, "extensions.editemailsubject.");
